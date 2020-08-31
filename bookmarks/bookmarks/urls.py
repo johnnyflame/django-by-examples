@@ -26,6 +26,5 @@ urlpatterns = [
     path("account/", include("account.urls")),
 ]
 if settings.DEBUG:
-    print(repr(static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)))
     urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

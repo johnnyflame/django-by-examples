@@ -34,4 +34,5 @@ class ProfileEditForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ("date_of_birth", "photo")
+        help_texts = {"date_of_birth": ("Enter a date in the format of YYYY-MM-DD")}
 
